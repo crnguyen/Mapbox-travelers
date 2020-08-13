@@ -1,0 +1,18 @@
+{
+  "development": {
+    "database": "mapbox_travelers_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "mapbox_travelers_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+
+    "database": "mapbox_travelers_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -1,0 +1,22 @@
+<header>
+    <h1>Search Results For</h1>
+</header>
+
+<ul> 
+    <% locations.forEach(l => { %> 
+        <li>
+            <h2><%= l.city %> </h2>
+            <h2><%= l.coord %></h2>
+            <form action="/add" method="POST">
+                <input hidden type="text" id="city" name="city">
+                <input hidden type="text" id="long" name="long">
+                <input hidden type="text" id="state" name="state">
+                <input hidden type="text" id="lat" name="lat">
+        
+            </form>
+        </li>
+    <% }); %>
+        
+</ul>
+
+<a href="/home">Back to home</a>
